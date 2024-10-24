@@ -2,7 +2,7 @@ import React from 'react'
 
 function News() {
   return (
-    <div>News : Harsh Prajapati </div>
+    <div>News : Nisarg Patel </div>
   )
 }
 
