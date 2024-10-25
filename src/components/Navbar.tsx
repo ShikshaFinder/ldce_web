@@ -1,44 +1,49 @@
 import React from "react";
-import styles from '../styles/Navbar.module.css'; // Adjust the path as necessary
 import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link"; // Correct import for Next.js
 
 const Navbar = () => {
   return (
     <>
-      <nav className={styles.Ldce_nav}>
-        <div className={styles.wrapper}>
-          <div className={`${styles.logo} flex flex-row items-center`}>
+      <nav className="Ldce_nav">
+        <div className="wrapper">
+          <div className="logo flex flex-row items-center">
             <img src="./LDCE_Logo.png" className="w-[70px]" alt="Ldce_logo" />
             <a
               href="#"
-              className={` hidden md:inline text-lg lg:text-xl xl:block`}
+              className="heading hidden md:inline text-lg lg:text-xl xl:block"
             >
               L. D. COLLEGE OF ENGINEERING
             </a>
           </div>
           <input type="radio" name="slider" id="menu-btn" />
           <input type="radio" name="slider" id="close-btn" />
-          <ul className={`${styles.navLinks} mb-0`}>
-            <label htmlFor="close-btn" className={`${styles.btnn}`}>
+          <ul className="nav-links mb-0">
+            <label htmlFor="close-btn" className="btnn close-btn">
               <X color="#d8315b" size={32} />
             </label>
             <li>
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#" className={styles.desktopItem}>
+              <a href="#" className="desktop-item">
                 About
               </a>
               <input type="checkbox" id="showMega1" />
-              <label htmlFor="showMega1" className={styles.mobileItem}>
+              <label htmlFor="showMega1" className="mobile-item">
                 About
               </label>
-              <div className={styles.megaBox}>
-                <div className={styles.content}>
-                  <div className={styles.row}>
+              <div className="mega-box">
+                <div className="content">
+                  {/* <div className="row">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                      alt=""
+                    />
+                  </div> */}
+                  <div className="row">
                     <header>The Institute</header>
-                    <ul className={styles.megaLinks}>
+                    <ul className="mega-links">
                       <li>
                         <a href="#">About LDCE</a>
                       </li>
@@ -49,7 +54,7 @@ const Navbar = () => {
                         <a href="#">Organization Chart</a>
                       </li>
                       <li>
-                        <a href="#">Institute Committees</a>
+                        <a href="#">Intitute Committees</a>
                       </li>
                       <li>
                         <a href="#">Center Of Excellence - Siemens</a>
@@ -65,9 +70,9 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className={styles.row}>
+                  <div className="row">
                     <header>Legal Forms</header>
-                    <ul className={styles.megaLinks}>
+                    <ul className="mega-links">
                       <li>
                         <a href="#">MOU</a>
                       </li>
@@ -98,18 +103,24 @@ const Navbar = () => {
               </div>
             </li>
             <li>
-              <a href="#" className={styles.desktopItem}>
+              <a href="#" className="desktop-item">
                 Academics
               </a>
               <input type="checkbox" id="showMega2" />
-              <label htmlFor="showMega2" className={styles.mobileItem}>
+              <label htmlFor="showMega2" className="mobile-item">
                 Academics
               </label>
-              <div className={styles.megaBox}>
-                <div className={styles.content}>
-                  <div className={styles.row}>
+              <div className="mega-box">
+                <div className="content">
+                  {/* <div className="row">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                      alt=""
+                    />
+                  </div> */}
+                  <div className="row">
                     <header>Intake</header>
-                    <ul className={styles.megaLinks}>
+                    <ul className="mega-links">
                       <li>
                         <Link href="/admissions">BE Admission & Courses</Link>
                       </li>
@@ -124,11 +135,11 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className={styles.row}>
+                  <div className="row">
                     <header>Academics</header>
-                    <ul className={styles.megaLinks}>
+                    <ul className="mega-links">
                       <li>
-                        <a href="#">Academic Calendar</a>
+                        <a href="#">Academic Calender</a>
                       </li>
                       <li>
                         <a href="#">Brochure</a>
@@ -144,9 +155,9 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className={styles.row}>
+                  <div className="row">
                     <header>Affiliation/Approval</header>
-                    <ul className={styles.megaLinks}>
+                    <ul className="mega-links">
                       <li>
                         <a href="#">AICTE EOA</a>
                       </li>
@@ -154,7 +165,7 @@ const Navbar = () => {
                         <a href="#">AICTE Environment Policy</a>
                       </li>
                       <li>
-                        <a href="#">Accreditation Status</a>
+                        <a href="#">Accredition Status</a>
                       </li>
                       <li>
                         <a href="#">GTU Affiliation</a>
@@ -171,17 +182,23 @@ const Navbar = () => {
               </div>
             </li>
             <li>
-              <a href="#" className={styles.desktopItem}>
+              <a href="#" className="desktop-item">
                 Departments
               </a>
               <input type="checkbox" id="showMega3" />
-              <label htmlFor="showMega3" className={styles.mobileItem}>
+              <label htmlFor="showMega3" className="mobile-item">
                 Departments
               </label>
-              <div className={styles.megaBox}>
-                <div className={styles.content}>
-                  <div className={styles.row}>
-                    <ul className={styles.megaLinks}>
+              <div className="mega-box">
+                <div className="content">
+                  {/* <div className="row">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                      alt=""
+                    />
+                  </div> */}
+                  <div className="row">
+                    <ul className="mega-links">
                       <li>
                         <a href="#">Applied Mechanics</a>
                       </li>
@@ -202,8 +219,8 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className={styles.row}>
-                    <ul className={styles.megaLinks}>
+                  <div className="row">
+                    <ul className="mega-links">
                       <li>
                         <a href="#">Computer Engineering</a>
                       </li>
@@ -221,8 +238,8 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className={styles.row}>
-                    <ul className={styles.megaLinks}>
+                  <div className="row">
+                    <ul className="mega-links">
                       <li>
                         <a href="#">Information Technology</a>
                       </li>
@@ -247,18 +264,24 @@ const Navbar = () => {
               <a href="#">Placement</a>
             </li>
             <li>
-              <a href="#" className={styles.desktopItem}>
+              <a href="#" className="desktop-item">
                 Campus Life
               </a>
               <input type="checkbox" id="showMega4" />
-              <label htmlFor="showMega4" className={styles.mobileItem}>
+              <label htmlFor="showMega4" className="mobile-item">
                 Campus Life
               </label>
-              <div className={styles.megaBox}>
-                <div className={styles.content}>
-                  <div className={styles.row}>
+              <div className="mega-box">
+                <div className="content">
+                  {/* <div className="row">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                      alt=""
+                    />
+                  </div> */}
+                  <div className="row">
                     <header>Student Life</header>
-                    <ul className={styles.megaLinks}>
+                    <ul className="mega-links">
                       <li>
                         <a href="#">LDCE Clubs</a>
                       </li>
@@ -270,9 +293,9 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className={styles.row}>
+                  <div className="row">
                     <header>Campus Life</header>
-                    <ul className={styles.megaLinks}>
+                    <ul className="mega-links">
                       <li>
                         <a href="#">Sports</a>
                       </li>
@@ -287,9 +310,9 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className={styles.row}>
+                  <div className="row">
                     <header>Infrastructure</header>
-                    <ul className={styles.megaLinks}>
+                    <ul className="mega-links">
                       <li>
                         <a href="#">Campus Map</a>
                       </li>
@@ -308,18 +331,24 @@ const Navbar = () => {
               </div>
             </li>
             <li>
-              <a href="#" className={styles.desktopItem}>
+              <a href="#" className="desktop-item">
                 Innovation
               </a>
               <input type="checkbox" id="showMega5" />
-              <label htmlFor="showMega5" className={styles.mobileItem}>
+              <label htmlFor="showMega5" className="mobile-item">
                 Innovation & StartUps
               </label>
-              <div className={styles.megaBox}>
-                <div className={styles.content}>
-                  <div className={styles.row}>
+              <div className="mega-box">
+                <div className="content">
+                  {/* <div className="row">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                      alt=""
+                    />
+                  </div> */}
+                  <div className="row">
                     <header>Innovation and Startups</header>
-                    <ul className={styles.megaLinks}>
+                    <ul className="mega-links">
                       <li>
                         <a href="#">SSIP</a>
                       </li>
@@ -343,9 +372,9 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className={styles.row}>
+                  <div className="row">
                     <header>Conference</header>
-                    <ul className={styles.megaLinks}>
+                    <ul className="mega-links">
                       <li>
                         <a href="#">ACM-W Regional Celebration 2021</a>
                       </li>
@@ -354,26 +383,44 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
+                  {/* <div className="row">
+                    <header>Security services</header>
+                    <ul className="mega-links">
+                      <li>
+                        <a href="#">Site Seal</a>
+                      </li>
+                      <li>
+                        <a href="#">VPS Hosting</a>
+                      </li>
+                      <li>
+                        <a href="#">Privacy Seal</a>
+                      </li>
+                      <li>
+                        <a href="#">Website design</a>
+                      </li>
+                    </ul>
+                  </div> */}
                 </div>
               </div>
             </li>
             <li>
-              <a href="#" className={styles.desktopItem}>
+              <a href="#" className="desktop-item">
                 More
                 <ChevronDown style={{ display: "inline-block" }} size={20} />
               </a>
               <input type="checkbox" id="showDrop" />
-              <label htmlFor="showDrop" className={styles.mobileItem}>
+              <label htmlFor="showDrop" className="mobile-item">
                 More
                 <ChevronDown style={{ display: "inline-block" }} />
               </label>
-              <ul className={`${styles.dropMenu} ms-0 ps-0`}>
+              <ul className="drop-menu ms-0 ps-0">
                 <li>
                   <a href="#">NIRF</a>
                 </li>
                 <li>
                   <a href="#">ARIIA</a>
                 </li>
+
                 <li>
                   <a href="#">Student Section </a>
                 </li>
@@ -395,11 +442,15 @@ const Navbar = () => {
               </ul>
             </li>
           </ul>
-          <label htmlFor="menu-btn" className={`${styles.btnn} ${styles.menuBtn}`}>
+          <label htmlFor="menu-btn" className="btnn menu-btn">
             <Menu color="#0a2463" />
           </label>
         </div>
       </nav>
+      {/* <div class="body-text">
+        <div class="title">Responsive Dropdown and Mega Menu lorem40</div>
+        <div class="sub-title">using only HTML & CSS</div>
+      </div> */}
     </>
   );
 };
