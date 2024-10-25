@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/Navbar.css";
 import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link"; // Correct import for Next.js
 
