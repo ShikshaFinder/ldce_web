@@ -1,12 +1,12 @@
 import React from "react";
-import "../styles/Navbar.css";
+import styles from '../styles/Navbar.module.css'; // Adjust the path as necessary
 import { ChevronDown, Menu, X } from "lucide-react";
 import Link from "next/link"; // Correct import for Next.js
 
 const Navbar = () => {
   return (
     <>
-      <nav className="Ldce_nav">
+      <nav className={styles.Ldce_nav}>
         <div className="wrapper">
           <div className="logo flex flex-row items-center">
             <img src="./LDCE_Logo.png" className="w-[70px]" alt="Ldce_logo" />
