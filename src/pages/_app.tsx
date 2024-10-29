@@ -6,6 +6,7 @@ import "../styles/Navbar.css";
 
 
 
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
