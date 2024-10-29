@@ -42,7 +42,7 @@ function Gallary() {
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
-            className={`px-2  py-2 text-xs rounded-lg md:px-4 md:text-l transition-colors ${
+            className={`px-2  py-2 text-xs rounded-lg md:px-4 md:text-xl transition-colors ${
               selectedCategory === category
                 ? 'bg-blue-600 text-white'
                 : 'bg-gray-200 text-gray-700 hover:bg-blue-500 hover:text-white'
