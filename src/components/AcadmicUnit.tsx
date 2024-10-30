@@ -69,7 +69,7 @@ const InnovationResearchPatents = () => {
             {/* Card 3 */}
             <div className="relative group">
               <img
-                src="/images/ssip.png"
+                src="/images/ssippng.png"
                 className="w-full object-cover h-75"
                 alt="SSIP Orientations"
               />
