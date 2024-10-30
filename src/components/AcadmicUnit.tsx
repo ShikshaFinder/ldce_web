@@ -20,7 +20,7 @@ const InnovationResearchPatents = () => {
             {/* Card 1 */}
             <div className="relative group">
               <Image
-                src="/images/startup.jpg"
+                src="/Images/startup.jpg"
                 className="w-full object-cover h-75"
                 alt="Startups"
                 width={100}
@@ -47,7 +47,7 @@ const InnovationResearchPatents = () => {
             {/* Card 2 */}
             <div className="relative group">
               <Image
-                src="/images/patents.jpg"
+                src="/Images/patents.jpg"
                 className="w-full object-cover h-75"
                 alt="Patents"
                 width={75}
@@ -74,7 +74,7 @@ const InnovationResearchPatents = () => {
             {/* Card 3 */}
             <div className="relative group">
               <Image
-                src="/images/ssippng.png"
+                src="/Images/ssippng.png"
                 className="w-full object-cover h-75"
                 alt="SSIP Orientations"
                 width={75}
