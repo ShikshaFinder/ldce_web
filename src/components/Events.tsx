@@ -30,7 +30,7 @@ function Events() {
 
   async function eventsFetch() {
     try {
-      const response = await fetch("http://stag-api.ldce.ac.in/api/events", {
+      const response = await fetch("https://stag-api.ldce.ac.in/api/events", {
         headers: {
           Authorization: "Bearer PMAT-01JA56ABRBF4HP439YQRKVCF2C",
         },
@@ -57,7 +57,7 @@ function Events() {
       <button className="btn btn-circle absolute right-0 mr-4" onClick={nextSlide}>
         ❯
       </button>
-      <button className="btn btn-circle mr-4" onClick={nextSlide}>
+      <button className=" mr-4" onClick={nextSlide}>
         
       </button>
       </div>
