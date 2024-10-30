@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const InnovationResearchPatents = () => {
   return (
@@ -18,10 +19,12 @@ const InnovationResearchPatents = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card 1 */}
             <div className="relative group">
-              <img
+              <Image
                 src="/images/startup.jpg"
                 className="w-full object-cover h-75"
                 alt="Startups"
+                width={100}
+                height={100}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
                 <a
@@ -43,10 +46,12 @@ const InnovationResearchPatents = () => {
             </div>
             {/* Card 2 */}
             <div className="relative group">
-              <img
+              <Image
                 src="/images/patents.jpg"
                 className="w-full object-cover h-75"
                 alt="Patents"
+                width={75}
+                height={75}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
                 <a
@@ -68,10 +73,12 @@ const InnovationResearchPatents = () => {
             </div>
             {/* Card 3 */}
             <div className="relative group">
-              <img
+              <Image
                 src="/images/ssippng.png"
                 className="w-full object-cover h-75"
                 alt="SSIP Orientations"
+                width={75}
+                height={75}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
                 <a
