@@ -19,8 +19,8 @@ const InnovationResearchPatents = () => {
             {/* Card 1 */}
             <div className="relative group">
               <img
-                src="/startup.webp"
-                className="w-full object-cover h-64"
+                src="/images/startup.jpg"
+                className="w-full object-cover h-75"
                 alt="Startups"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
@@ -44,8 +44,8 @@ const InnovationResearchPatents = () => {
             {/* Card 2 */}
             <div className="relative group">
               <img
-                src="/patents.webp"
-                className="w-full object-cover h-64"
+                src="/images/patents.jpg"
+                className="w-full object-cover h-75"
                 alt="Patents"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
@@ -69,8 +69,8 @@ const InnovationResearchPatents = () => {
             {/* Card 3 */}
             <div className="relative group">
               <img
-                src="/ssip.webp"
-                className="w-full object-cover h-64"
+                src="/images/ssip.png"
+                className="w-full object-cover h-75"
                 alt="SSIP Orientations"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
