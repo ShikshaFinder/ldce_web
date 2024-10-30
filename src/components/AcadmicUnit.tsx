@@ -23,8 +23,8 @@ const InnovationResearchPatents = () => {
                 src="/Images/startup.jpg"
                 className="w-full object-cover h-75"
                 alt="Startups"
-                width={100}
-                height={100}
+                width={200}
+                height={200}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
                 <a
@@ -50,8 +50,8 @@ const InnovationResearchPatents = () => {
                 src="/Images/patents.jpg"
                 className="w-full object-cover h-75"
                 alt="Patents"
-                width={75}
-                height={75}
+                width={200}
+                height={200}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
                 <a
@@ -77,8 +77,8 @@ const InnovationResearchPatents = () => {
                 src="/Images/ssippng.png"
                 className="w-full object-cover h-75"
                 alt="SSIP Orientations"
-                width={75}
-                height={75}
+                width={200}
+                height={200}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
                 <a
