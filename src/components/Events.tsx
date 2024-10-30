@@ -47,8 +47,8 @@ function Events() {
   }, []);
 
   return (
-    <div className="py-10 px-2 md:px-20 text-center">
-      <h1 className="text-4xl font-bold mt-0 mb-10">Latest Events</h1>
+    <div className="py-10 px-1 md:px-20 text-center">
+      <h1 className="text-4xl font-bold mt-0 mb-10">Events Calander</h1>
 
       <div className="flex justify-center mb-4">
       <button className="btn btn-circle absolute left-0 ml-4" onClick={prevSlide}>
