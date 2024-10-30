@@ -47,48 +47,48 @@ function Events() {
   }, []);
 
   return (
-    <div className="py-10 px-20 text-center">
+    <div className="py-10 px-2 md:px-20 text-center">
       <h1 className="text-4xl font-bold mt-0 mb-10">Latest Events</h1>
 
       <div className="flex justify-center mb-4">
-        <button className="btn btn-circle absolute left-0 ml-4" onClick={prevSlide}>
-          ❮
-        </button>
-        <button className="btn btn-circle absolute right-0 mr-4" onClick={nextSlide}>
-          ❯
-        </button>
-        <button className="btn btn-circle mr-4" onClick={nextSlide}>
-          
-        </button>
+      <button className="btn btn-circle absolute left-0 ml-4" onClick={prevSlide}>
+        ❮
+      </button>
+      <button className="btn btn-circle absolute right-0 mr-4" onClick={nextSlide}>
+        ❯
+      </button>
+      <button className="btn btn-circle mr-4" onClick={nextSlide}>
+        
+      </button>
       </div>
 
       <div className="carousel w-full overflow-hidden">
-        <div
-          className="flex transition-transform duration-700 ease-in-out"
-          style={{
-        transform: `translateX(-${currentSlide * 100}%)`,
-        width: `${(events.length / itemsPerSlide) * 100}%`,
-          }}
-        >
-          {events.map((event, index) => (
-        <div
-          key={event.id}
-          className="w-1/3 flex-shrink-0 p-4"
-          style={{
-            maxWidth: `${100 / itemsPerSlide}%`,
-          }}
-        >
-          <EventCard
-            img={event.cover_image || "/Achivement_img4.jpeg"}
-            link={event.reg_url}
-            name={event.name}
-            discription={event.description || "No description available."}
-          />
-        </div>
-          ))}
-        </div>
+      <div
+        className="flex transition-transform duration-700 ease-in-out"
+        style={{
+      transform: `translateX(-${currentSlide * 100}%)`,
+      width: `${(events.length / itemsPerSlide) * 100}%`,
+        }}
+      >
+        {events.map((event, index) => (
+      <div
+        key={event.id}
+        className="w-1/3 flex-shrink-0 p-4"
+        style={{
+        maxWidth: `${100 / itemsPerSlide}%`,
+        }}
+      >
+        <EventCard
+        img={event.cover_image || "/Achivement_img4.jpeg"}
+        link={event.reg_url}
+        name={event.name}
+        discription={event.description || "No description available."}
+        />
       </div>
-        </div>
+        ))}
+      </div>
+      </div>
+    </div>
   );
 }
 

@@ -3,7 +3,7 @@ import React from "react";
 const InnovationResearchPatents = () => {
   return (
     <div className=" my-12">
-      <div className="container-fluid py-5 bg-slate-200">
+      <div className="container-fluid py-5 px-5 md:px-16 bg-slate-200">
         <div className="container py-5">
           <div
             className="text-center mx-auto pb-5"
