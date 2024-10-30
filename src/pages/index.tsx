@@ -11,18 +11,18 @@ import Carousel from "@/components/carousel";
 
 export default function Home() {
   return (
-    <>
-      <Carousel />
-      <Announcement />
-      <AboutLdce />
-      <Events />
-      <LDCENumbers />
-      <AcadmicUnit />
-      <Gallary />
-      <Achivements />
-      <News />
-      <Placements />
-      Rudra panchal : Footer & Department page layout
-    </>
+   <>
+   <Carousel />
+   <Announcement />
+    <AboutLdce />
+    <Events />
+    <LDCENumbers />
+    <AcadmicUnit />
+    <Gallary/>
+    <Achivements />
+    <News />
+    <Placements />
+  Rudra panchal : Footer & Department page layout
+   </>
   );
 }
