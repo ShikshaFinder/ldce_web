@@ -5,7 +5,6 @@ const AboutSection = () => {
     <div className="about-area pb-20 pt-16 px-9">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center">
-          {/* Image Section */}
           <div className="lg:w-1/2 w-full animate-slideInUp mb-10 lg:mb-0">
             <div className="about-image rounded-lg overflow-hidden">
               <img
