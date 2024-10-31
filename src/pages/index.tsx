@@ -22,7 +22,6 @@ export default function Home() {
     <Achivements />
     <News />
     <Placements />
-  Rudra panchal : Footer & Department page layout
    </>
   );
 }
