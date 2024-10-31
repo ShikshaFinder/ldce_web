@@ -31,7 +31,7 @@ function Events() {
 
   async function eventsFetch() {
     try {
-      const response = await fetch("http://stag-api.ldce.ac.in/api/events", {
+      const response = await fetch("https://stag-api.ldce.ac.in/api/events", {
         headers: {
           Authorization: "Bearer PMAT-01JA56ABRBF4HP439YQRKVCF2C",
         },

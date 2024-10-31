@@ -21,12 +21,12 @@ function EventCard({
       <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4">
       <div className="mb-4">
         <a
-        href={link}
+        href={link || "#"}
         className="text-3xl text-left font-bold text-white mb-2 block"
         >
-        {name}
+        {name || "Event Name"} 
         </a>
-        <p className="text-white text-left">{discription}</p>
+        <p className="text-white text-left">{discription || "lorem ipsum kdnv aodvn odvn dvjnd dovnv"}</p>
       </div>
       <a
         className="btn-hover-bg bg-primary text-white py-2 px-2 rounded transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300"
