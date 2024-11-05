@@ -87,7 +87,7 @@ function News() {
                 </figure>
                 <div className="card-body flex flex-col overflow-y-auto max-h-60 flex-grow bg-[#f2f2f2]">
                   <div>
-                    <p className="text-left overflow-auto">
+                    <p className="text-left overflow-auto line-clamp-3">
                       {news.description}
                     </p>
                     <div className="card-actions w-full"></div>
