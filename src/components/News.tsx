@@ -51,11 +51,11 @@ function News() {
         <span className="absolute inset-0 flex items-center justify-center">
           <div className="w-full border-t border-blue-400"></div>
         </span>
-        <h2 className="relative text-xl font-bold mx-4 text-blue-500 px-2 bg-white inline-block">
+        <h1 className="relative text-5xl font-bold mx-4 text-blue-500 px-2 bg-white inline-block">
           NEWS
-        </h2>
+        </h1>
       </div>
-      <h1 className="text-4xl font-bold mt-0 mb-10">Latest News</h1>
+      <h1 className="text-2xl font-bold mt-0 mb-10">What is happening in LDCE</h1>
 
       <div className="flex justify-between">
         <button className="btn btn-circle ml-12 mb-2" onClick={prevSlide}>

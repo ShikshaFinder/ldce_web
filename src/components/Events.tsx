@@ -67,9 +67,9 @@ function Events() {
         <div className=" mr-4">
           <hr />
           <h1 className="text-4xl font-bold mt-0 mb-10">Events Calander</h1>
-          <hr />
         </div>
       </div>
+      <hr className="border-blue-700 mb-4" />
 
       <div className="carousel w-full overflow-hidden">
         <div
