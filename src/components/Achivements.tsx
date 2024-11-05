@@ -66,7 +66,9 @@ function Achivements() {
             <h1 className="text-3xl font-extrabold text-primary sm:text-4xl">
               Achievements
             </h1>
-            <p className="mt-5 text-sm font-semibold text-gray-400">
+            <hr />
+
+            <p className="mt-5 text-xl font-semibold text-gray-400">
               We are proud of the students who are working hard to make a
               difference.
             </p>

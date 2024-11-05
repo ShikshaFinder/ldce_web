@@ -66,7 +66,9 @@ function Events() {
         </button>
         <div className=" mr-4">
           <hr />
-          <h1 className="text-4xl font-bold mt-0 mb-10">Events Calander</h1>
+          <h1 className="text-3xl  md:text-4xl  font-bold  mb-10">
+            &nbsp;&nbsp; Events Calander
+          </h1>
         </div>
       </div>
       <hr className="border-blue-700 mb-4" />

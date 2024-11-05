@@ -55,6 +55,7 @@ function News() {
           NEWS
         </h1>
       </div>
+      <br />
       <h1 className="text-2xl font-bold mt-0 mb-10">What is happening in LDCE</h1>
 
       <div className="flex justify-between">

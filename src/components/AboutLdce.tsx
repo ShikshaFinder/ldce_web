@@ -2,15 +2,15 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <div className="about-area pb-20 pt-16 px-9">
+    <div className="about-area pb-20 pt-16 px-4 md:px-9">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 w-full animate-slideInUp mb-10 lg:mb-0">
+          <div className="lg:w-1/2 w-full animate-slideInUp  mb-7 md:mb-10 lg:mb-0">
             <div className="about-image rounded-lg overflow-hidden">
               <img
-              src="Images/15.jpg"
-              alt="about-image"
-              className="w-full h-auto max-w-full"
+                src="Images/15.jpg"
+                alt="about-image"
+                className="w-full h-auto max-w-full"
               />
             </div>
           </div>
@@ -22,6 +22,8 @@ const AboutSection = () => {
                 <h2 className="text-4xl text-blue-900 font-bold mb-6 flex items-center">
                   About LDCE
                 </h2>
+                <hr className="border-blue-700 mb-4" />
+
                 <p className="text-lg leading-relaxed text-gray-700 mb-6">
                   L. D. College of Engineering, endearingly known as L.D.C.E, is
                   Ahmedabad’s premier engineering college situated in the city’s
