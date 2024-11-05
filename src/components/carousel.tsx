@@ -63,11 +63,10 @@ const Carousel = () => {
                 <h5 className="text-4xl md:text-6xl font-bold">
                   {slide.title}
                 </h5>
-                <br />
                 <p className="font-light text-lg md:text-xl">
                   {slide.description}
                 </p>
-                <div className="flex items-center justify-center mt-5 pb-9">
+                <div className="flex items-center justify-center mt-5">
                   <a
                     className="btn btn-primary rounded-pill text-white py-3 px-5"
                     href="#explorenow"
