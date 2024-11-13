@@ -1,16 +1,27 @@
 import React from "react";
 import CountUp from "react-countup";
 
+import {
+  FaUserGraduate,
+  FaUserTie,
+  FaUserNurse,
+  FaUserSecret,
+  FaChalkboardTeacher,
+  FaUsersCog,
+  FaLightbulb,
+  FaProjectDiagram,
+} from "react-icons/fa";
+
 const StatisticsSection = () => {
   const stats = [
-    { count: 50000, label: "Undergraduate Students", icon: "icon__ug" },
-    { count: 1000, label: "Postgraduate Students", icon: "icon__pg" },
-    { count: 1000, label: "ME Research Scholars", icon: "icon__globalworld" },
-    { count: 15, label: "PhD Research Scholars", icon: "icon__rs" },
-    { count: 280, label: "Faculty", icon: "icon__faculty" },
-    { count: 150, label: "Staff", icon: "icon__staff" },
-    { count: 20, label: "Patents", icon: "icon__patents" },
-    { count: 100, label: "Projects", icon: "icon__investment" },
+    { count: 50000, label: "Undergraduate Students", icon: FaUserGraduate },
+    { count: 1000, label: "Postgraduate Students", icon: FaUserTie },
+    { count: 1000, label: "ME Research Scholars", icon: FaUserNurse },
+    { count: 15, label: "PhD Research Scholars", icon: FaUserSecret },
+    { count: 280, label: "Faculty", icon: FaChalkboardTeacher },
+    { count: 150, label: "Staff", icon: FaUsersCog },
+    { count: 20, label: "Patents", icon: FaLightbulb },
+    { count: 100, label: "Projects", icon: FaProjectDiagram },
   ];
 
   return (
@@ -27,7 +38,8 @@ const StatisticsSection = () => {
               className="flex flex-col items-center bg-white bg-opacity-10 p-6 rounded-lg"
             >
               <div className="mb-4">
-                <span className={`${stat.icon} text-6xl`}></span>
+                {/* Rendering the icon component */}
+                <stat.icon className="text-6xl" />
               </div>
               <h3 className="text-4xl font-bold text-yellow-400">
                 <CountUp
