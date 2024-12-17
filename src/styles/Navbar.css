@@ -11,24 +11,18 @@
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
     background: #fffaff;
 }
 
 .Ldce_nav .wrapper {
     position: relative;
     /* max-width: 1500px; */
-    padding: 0px 15px;
-    height: 70px;
-    line-height: 70px;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .wrapper .logo a {
-    color: #0a2463;
     /* font-size: 30px; */
     font-weight: 600;
     text-decoration: none;
@@ -43,11 +37,7 @@
 }
 
 .nav-links li a {
-    color: #0a2463;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-    padding: 9px 9px;
     border-radius: 5px;
     transition: all 0.3s ease;
     position: relative;
@@ -62,7 +52,7 @@
     width: 0;
     height: 2px;
     background: none repeat scroll 0 0 transparent;
-    background: #d8315b;
+    background: #3202f0;
     /* Change background color if needed */
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
@@ -70,13 +60,10 @@
 .nav-links li a:hover:after {
     width: 100%;
     left: 0;
-    background: #d8315b;
+    background: #ffff;
     /* Change background color if needed */
 }
 
-.nav-links li a:hover {
-    color: #2a65ed;
-}
 
 .nav-links .mobile-item {
     display: none;
@@ -97,7 +84,6 @@
 .nav-links li:hover .drop-menu,
 .nav-links li:hover .mega-box {
     transition: all 0.3s ease;
-    top: 70px;
     opacity: 1;
     visibility: visible;
 }
@@ -113,12 +99,10 @@
 .mega-box {
     position: absolute;
     left: 0;
-    width: 100%;
     padding: 0 30px;
-    top: 85px;
     opacity: 0;
     visibility: hidden;
-   
+    width: 100%;
 }
 
 .mega-box .content {
@@ -138,7 +122,7 @@
 .row .mega-links li {
     list-style: "\276F";
     margin-left: 10px;
-    color: #d8315b;
+    color: #452dfc;
 }
 
 
@@ -149,7 +133,7 @@
 }
 
 .content .row header {
-    color: #d8315b;
+    color: #452dfc;
     font-size: 20px;
     font-weight: 500;
 }
@@ -189,6 +173,25 @@
     cursor: pointer;
     display: none;
 }
+
+/* Define the background transition animation */
+@keyframes bgTransition {
+  0% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    top: 100%;
+  }
+  100% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+    top: 0;
+  }
+}
+
+.animate-bgTransition {
+  animation: bgTransition 0.5s ease-out forwards;
+}
+
 
 .wrapper .btnn.close-btn {
     position: absolute;
