@@ -1,46 +1,76 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
-import Link from "next/link"; // Correct import for Next.js
+import Link from "next/link"; 
 
 const Navbar = () => {
+  const [navBackground, setNavBackground] = useState("!bg-transparent");
+  const [color, setColor] = useState("text-white");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 50;
+      if (show) {
+        setNavBackground("!bg-white-500");
+        setColor("text-black");
+      } else {
+        setNavBackground("!bg-transparent");
+        setColor("text-white");
+      }
+    };
+
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <nav className="Ldce_nav">
-        <div className="wrapper">
-          <div className="logo flex flex-row items-center">
+      <nav
+        className={`Ldce_nav !border-b-[0.8px] border-[#ffffff1a] ${navBackground}`}
+      >
+        <div className="w-full bg-[#13357b] py-3 px-20">
+          <ul className="flex justify-end font-serif text-xs gap-4 text-white">
+            <li>GRIEVANCE</li>
+            <li>SITEMAP</li>
+            <li>STUDENT SECTION</li>
+            <li>CONTACT</li>
+          </ul>
+        </div>
+        <div className="wrapper px-10 px-lg-5 py-lg-0">
+          <div className="logo gap-6 flex flex-row items-center justify-center">
             <img src="./LDCE_Logo.png" className="w-[70px]" alt="Ldce_logo" />
             <a
-              href="#"
-              className="heading hidden md:inline text-lg lg:text-xl xl:block"
+              href="/"
+              className={` ${color} text-2xl font-serif font-bold text-center`}
             >
-              L. D. COLLEGE OF ENGINEERING
+              L. D. College Of Engineering
             </a>
           </div>
           <input type="radio" name="slider" id="menu-btn" />
           <input type="radio" name="slider" id="close-btn" />
-          <ul className="nav-links mb-0">
+          <ul
+            className={`nav-links flex flex-row items-center font-serif text-lg ${color}  mb-0`}
+          >
             <label htmlFor="close-btn" className="btnn close-btn">
               <X color="#d8315b" size={32} />
             </label>
-            <li>
-              <a href="#">Home</a>
+            <li className="transition-colors duration-500 ease-in-out hover:bg-[#13357b] h-[96px] px-3 flex items-center">
+              <a className="" href="#">
+                Home
+              </a>
             </li>
-            <li>
+            <li className="transition-colors duration-500 ease-in-out hover:bg-[#13357b] h-[96px] px-3 flex items-center">
               <a href="#" className="desktop-item">
                 About
+                <ChevronDown style={{ display: "inline-block" }} size={20} />
               </a>
               <input type="checkbox" id="showMega1" />
               <label htmlFor="showMega1" className="mobile-item">
                 About
               </label>
-              <div className="mega-box">
+              <div className="mega-box top-[96px]">
                 <div className="content">
-                  {/* <div className="row">
-                    <img
-                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
-                      alt=""
-                    />
-                  </div> */}
                   <div className="row">
                     <header>The Institute</header>
                     <ul className="mega-links">
@@ -54,7 +84,7 @@ const Navbar = () => {
                         <a href="#">Organization Chart</a>
                       </li>
                       <li>
-                        <a href="#">Intitute Committees</a>
+                        <a href="#">Institute Committees</a>
                       </li>
                       <li>
                         <a href="#">Center Of Excellence - Siemens</a>
@@ -70,6 +100,7 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
+                  {/* git trial with terminal */}
                   <div className="row">
                     <header>Legal Forms</header>
                     <ul className="mega-links">
@@ -102,22 +133,17 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            <li>
+            <li className="transition-colors duration-500 ease-in-out hover:bg-[#13357b] h-[96px] px-3 flex items-center">
               <a href="#" className="desktop-item">
                 Academics
+                <ChevronDown style={{ display: "inline-block" }} size={20} />
               </a>
               <input type="checkbox" id="showMega2" />
               <label htmlFor="showMega2" className="mobile-item">
                 Academics
               </label>
-              <div className="mega-box">
+              <div className="mega-box top-[96px]">
                 <div className="content">
-                  {/* <div className="row">
-                    <img
-                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
-                      alt=""
-                    />
-                  </div> */}
                   <div className="row">
                     <header>Intake</header>
                     <ul className="mega-links">
@@ -139,7 +165,7 @@ const Navbar = () => {
                     <header>Academics</header>
                     <ul className="mega-links">
                       <li>
-                        <a href="#">Academic Calender</a>
+                        <a href="#">Academic Calendar</a>
                       </li>
                       <li>
                         <a href="#">Brochure</a>
@@ -165,7 +191,11 @@ const Navbar = () => {
                         <a href="#">AICTE Environment Policy</a>
                       </li>
                       <li>
-                        <a href="#">Accredition Status</a>
+                        <a href="#">Accreditation</a>{" "}
+                      </li>
+
+                      <li>
+                        <a href="#">Accreditation Status</a>
                       </li>
                       <li>
                         <a href="#">GTU Affiliation</a>
@@ -181,7 +211,7 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            <li>
+            <li className="transition-colors duration-500 ease-in-out hover:bg-[#13357b] h-[96px] px-3 flex items-center">
               <a href="#" className="desktop-item">
                 Departments
               </a>
@@ -189,14 +219,8 @@ const Navbar = () => {
               <label htmlFor="showMega3" className="mobile-item">
                 Departments
               </label>
-              <div className="mega-box">
+              <div className="mega-box top-[96px]">
                 <div className="content">
-                  {/* <div className="row">
-                    <img
-                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
-                      alt=""
-                    />
-                  </div> */}
                   <div className="row">
                     <ul className="mega-links">
                       <li>
@@ -260,10 +284,10 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            <li>
+            <li className="transition-colors duration-500 ease-in-out hover:bg-[#13357b] h-[96px] px-3 flex items-center">
               <a href="#">Placement</a>
             </li>
-            <li>
+            <li className="transition-colors duration-500 ease-in-out hover:bg-[#13357b] h-[96px] px-3 flex items-center">
               <a href="#" className="desktop-item">
                 Campus Life
               </a>
@@ -271,14 +295,8 @@ const Navbar = () => {
               <label htmlFor="showMega4" className="mobile-item">
                 Campus Life
               </label>
-              <div className="mega-box">
+              <div className="mega-box top-[96px]">
                 <div className="content">
-                  {/* <div className="row">
-                    <img
-                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
-                      alt=""
-                    />
-                  </div> */}
                   <div className="row">
                     <header>Student Life</header>
                     <ul className="mega-links">
@@ -330,7 +348,7 @@ const Navbar = () => {
                 </div>
               </div>
             </li>
-            <li>
+            <li className="transition-colors duration-500 ease-in-out hover:bg-[#13357b] h-[96px] px-3 flex items-center">
               <a href="#" className="desktop-item">
                 Innovation
               </a>
@@ -338,41 +356,47 @@ const Navbar = () => {
               <label htmlFor="showMega5" className="mobile-item">
                 Innovation & StartUps
               </label>
-              <div className="mega-box">
+              <div className="mega-box top-[96px]">
                 <div className="content">
-                  {/* <div className="row">
-                    <img
-                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
-                      alt=""
-                    />
-                  </div> */}
-                  <div className="row">
+                  <div className="row ml-auto bg-white shadow-lg">
                     <header>Innovation and Startups</header>
                     <ul className="mega-links">
-                      <li>
+                      <li className="mega-item relative group">
                         <a href="#">SSIP</a>
+                        <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg px-10 py-2 mr-4">
+                          <li>
+                            <a href="#">Sub Item 1</a>
+                          </li>
+                          <li>
+                            <a href="#">Sub Item 2</a>
+                          </li>
+                          <li>
+                            <a href="#">Sub Item 3</a>
+                          </li>
+                        </ul>
                       </li>
-                      <li>
+
+                      <li className="mega-item">
                         <a href="#">Design Lab</a>
                       </li>
-                      <li>
+                      <li className="mega-item">
                         <a href="#">Patents</a>
                       </li>
-                      <li>
+                      <li className="mega-item">
                         <a href="#">Research Grants</a>
                       </li>
-                      <li>
+                      <li className="mega-item">
                         <a href="#">Incubation Center</a>
                       </li>
-                      <li>
+                      <li className="mega-item">
                         <a href="#">Information on Covid-19</a>
                       </li>
-                      <li>
+                      <li className="mega-item">
                         <a href="#">Super Computing Facility</a>
                       </li>
                     </ul>
                   </div>
-                  <div className="row">
+                  <div className="row ml-auto bg-white shadow-lg">
                     <header>Conference</header>
                     <ul className="mega-links">
                       <li>
@@ -383,27 +407,10 @@ const Navbar = () => {
                       </li>
                     </ul>
                   </div>
-                  {/* <div className="row">
-                    <header>Security services</header>
-                    <ul className="mega-links">
-                      <li>
-                        <a href="#">Site Seal</a>
-                      </li>
-                      <li>
-                        <a href="#">VPS Hosting</a>
-                      </li>
-                      <li>
-                        <a href="#">Privacy Seal</a>
-                      </li>
-                      <li>
-                        <a href="#">Website design</a>
-                      </li>
-                    </ul>
-                  </div> */}
                 </div>
               </div>
             </li>
-            <li>
+            <li className="transition-colors duration-500 ease-in-out hover:bg-[#13357b] h-[96px] px-3 flex items-center">
               <a href="#" className="desktop-item">
                 More
                 <ChevronDown style={{ display: "inline-block" }} size={20} />
@@ -420,18 +427,17 @@ const Navbar = () => {
                 <li>
                   <a href="#">ARIIA</a>
                 </li>
-
                 <li>
-                  <a href="#">Student Section </a>
+                  <a href="#">Student Section</a>
                 </li>
                 <li>
-                  <a href="#">Fees Payment </a>
+                  <a href="#">Fees Payment</a>
                 </li>
                 <li>
                   <a href="#">Study In Gujarat</a>
                 </li>
                 <li>
-                  <a href="#">Grievance </a>
+                  <a href="#">Grievance</a>
                 </li>
                 <li>
                   <a href="#">Sitemap</a>
@@ -447,10 +453,6 @@ const Navbar = () => {
           </label>
         </div>
       </nav>
-      {/* <div class="body-text">
-        <div class="title">Responsive Dropdown and Mega Menu lorem40</div>
-        <div class="sub-title">using only HTML & CSS</div>
-      </div> */}
     </>
   );
 };
