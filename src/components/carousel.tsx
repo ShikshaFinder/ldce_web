@@ -4,19 +4,19 @@ import React, { useState, useEffect } from "react";
 const Carousel = () => {
   const slides = [
     {
-      img: "/carousel/carousel-0.jpg",
+      img: "https://wsrv.nl/?url=https://ldce-web-nine.vercel.app/carousel/carousel-0.jpg&w=1920&h=1080&fit=cover",
       title: "SAFEGUARD YOUR FUTURE",
       description:
         "L.D.C.E has been providing the world with proficient engineers since 1952.",
     },
     {
-      img: "/carousel/carousel-1.jpg",
+      img: "https://wsrv.nl/?url=https://ldce-web-nine.vercel.app/carousel/carousel-1.jpg&w=1920&h=1080&fit=cover",
       title: "SAFEGUARD YOUR FUTURE",
       description:
         "L.D.C.E has been providing the world with proficient engineers since 1952.",
     },
     {
-      img: "/carousel/carousel-2.jpg",
+      img: "https://wsrv.nl/?url=https://ldce-web-nine.vercel.app/carousel/carousel-2.jpg&w=1920&h=1080&fit=cover",
       title: "SAFEGUARD YOUR FUTURE",
       description:
         "L.D.C.E has been providing the world with proficient engineers since 1952.",
@@ -68,12 +68,13 @@ const Carousel = () => {
                   {slide.description}
                 </p>
                 <div className="flex items-center justify-center mt-5 pb-9">
-                  <a
-                    className="btn btn-primary rounded-pill text-white py-3 px-5"
+                    <a
+                    className="btn rounded-pill text-white py-3 px-5"
                     href="#explorenow"
-                  >
+                    style={{ backgroundColor: '#1E40AF' }}
+                    >
                     Explore Now
-                  </a>
+                    </a>
                 </div>
               </div>
             </div>
