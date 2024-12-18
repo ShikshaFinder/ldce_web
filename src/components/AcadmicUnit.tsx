@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const InnovationResearchPatents = () => {
   return (
@@ -19,7 +18,7 @@ const InnovationResearchPatents = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Card 1 */}
             <div className="relative group">
-              <Image
+              <img
                 src="/Images/startup.jpg"
                 className="w-full object-cover h-75"
                 alt="Startups"
@@ -46,57 +45,57 @@ const InnovationResearchPatents = () => {
             </div>
             {/* Card 2 */}
             <div className="relative group">
-              <Image
-                src="/Images/patents.jpg"
-                className="w-full object-cover h-75"
-                alt="Patents"
-                width={200}
-                height={200}
+              <img
+              src="https://wsrv.nl/?url=https://ldce-web-nine.vercel.app/Images/patents.jpg&w=200&h=200&fit=cover"
+              className="w-full object-cover h-75"
+              alt="Patents"
+              width={200}
+              height={200}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
-                <a
-                  href="#"
-                  className="text-xl font-bold text-white mb-2 hover:text-primary"
-                >
-                  Patents
-                </a>
-                <p className="text-white text-center mb-4">
-                  More than 25 patents have been filed by students and faculty.
-                </p>
-                <a
-                  className="btn-hover-bg bg-primary text-white py-2 px-4 rounded hover:bg-opacity-80"
-                  href="#"
-                >
-                  Read More
-                </a>
+              <a
+                href="#"
+                className="text-xl font-bold text-white mb-2 hover:text-primary"
+              >
+                Patents
+              </a>
+              <p className="text-white text-center mb-4">
+                More than 25 patents have been filed by students and faculty.
+              </p>
+              <a
+                className="btn-hover-bg bg-primary text-white py-2 px-4 rounded hover:bg-opacity-80"
+                href="#"
+              >
+                Read More
+              </a>
               </div>
             </div>
             {/* Card 3 */}
             <div className="relative group">
-              <Image
-                src="/Images/ssippng.png"
-                className="w-full object-cover h-75"
-                alt="SSIP Orientations"
-                width={200}
-                height={200}
+              <img
+              src="https://wsrv.nl/?url=https://ldce-web-nine.vercel.app/Images/ssippng.png&w=200&h=200&fit=cover"
+              className="w-full object-cover h-75"
+              alt="SSIP Orientations"
+              width={200}
+              height={200}
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center">
-                <a
-                  href="#"
-                  className="text-xl font-bold text-white mb-2 hover:text-primary"
-                >
-                  SSIP Orientations
-                </a>
-                <p className="text-white text-center mb-4">
-                  More than 30 research papers have been published by students
-                  and faculty.
-                </p>
-                <a
-                  className="btn-hover-bg bg-primary text-white py-2 px-4 rounded hover:bg-opacity-80"
-                  href="#"
-                >
-                  Read More
-                </a>
+              <a
+                href="#"
+                className="text-xl font-bold text-white mb-2 hover:text-primary"
+              >
+                SSIP Orientations
+              </a>
+              <p className="text-white text-center mb-4">
+                More than 30 research papers have been published by students
+                and faculty.
+              </p>
+              <a
+                className="btn-hover-bg bg-primary text-white py-2 px-4 rounded hover:bg-opacity-80"
+                href="#"
+              >
+                Read More
+              </a>
               </div>
             </div>
           </div>
