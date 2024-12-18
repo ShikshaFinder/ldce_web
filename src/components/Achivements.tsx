@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 // Define prop types using TypeScript
 type CardProps = {
@@ -21,9 +21,7 @@ const Card: React.FC<CardProps> = ({ title, desc, img }) => {
                 {title}
               </h5>
             </a>
-            <p className="mb-3 font-normal text-gray-700">
-              {desc}
-            </p>
+            <p className="mb-3 font-normal text-gray-700">{desc}</p>
             <a
               href="#"
               className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
@@ -81,22 +79,30 @@ function Achivements() {
         <Card
           title={"LDCE"}
           desc={"LDCE is a good place to learn and grow."}
-          img={"./Achivement_img1.jpeg"}
+          img={
+            "https://wsrv.nl/?url=https://ldce-web-nine.vercel.app/Achivement_img1.jpeg&w=400&h=300&fit=cover"
+          }
         />
         <Card
           title={"LDCE"}
           desc={"LDCE is a good place to learn and grow."}
-          img={"./Achivement_img2.jpeg"}
+          img={
+            "https://wsrv.nl/?url=https://ldce-web-nine.vercel.app/Achivement_img2.jpeg&w=400&h=300&fit=cover"
+          }
         />
         <Card
           title={"LDCE"}
           desc={"LDCE is a good place to learn and grow."}
-          img={"./Achivement_img3.png"}
+          img={
+            "https://wsrv.nl/?url=https://ldce-web-nine.vercel.app/Achivement_img3.png&w=400&h=300&fit=cover"
+          }
         />
         <Card
           title={"LDCE"}
           desc={"LDCE is a good place to learn and grow."}
-          img={"./Achivement_img4.jpeg"}
+          img={
+            "https://wsrv.nl/?url=https://ldce-web-nine.vercel.app/Achivement_img4.jpeg&w=400&h=300&fit=cover"
+          }
         />
       </div>
 
@@ -105,4 +111,4 @@ function Achivements() {
   );
 }
 
-export default Achivements
+export default Achivements;
