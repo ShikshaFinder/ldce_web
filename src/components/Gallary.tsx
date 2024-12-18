@@ -1,25 +1,27 @@
 import React, { useState } from "react";
 
+const baseUrl = "https://wsrv.nl/?url=https://ldce-web-nine.vercel.app";
+
 const images = [
-  { id: 1, src: "/Images/1.jpg", category: "All" },
-  { id: 2, src: "/Images/2.jpg", category: "All" },
-  { id: 3, src: "/Images/3.jpg", category: "All" },
-  { id: 4, src: "/Images/4.jpg", category: "All" },
-  { id: 5, src: "/Images/5.jpg", category: "Sports" },
-  { id: 6, src: "/Images/6.jpg", category: "Sports" },
-  { id: 7, src: "/Images/7.jpg", category: "Sports" },
-  { id: 8, src: "/Images/8.jpg", category: "Sports" },
-  { id: 9, src: "/Images/9.jpg", category: "Department" },
-  { id: 10, src: "/Images/10.jpg", category: "Department" },
-  { id: 11, src: "/Images/11.jpg", category: "Department" },
-  { id: 12, src: "/Images/12.jpg", category: "Department" },
-  { id: 13, src: "/Images/13.jpg", category: "Department" },
-  { id: 14, src: "/Images/14.jpg", category: "Cultural Events" },
-  { id: 15, src: "/Images/15.jpg", category: "Cultural Events" },
-  { id: 16, src: "/Images/16.jpg", category: "Cultural Events" },
-  { id: 17, src: "/Images/17.jpg", category: "Cultural Events" },
-  { id: 18, src: "/Images/18.jpg", category: "Cultural Events" },
-  { id: 19, src: "/Images/19.jpg", category: "Cultural Events" },
+  { id: 1, src: `${baseUrl}/Images/1.jpg&w=800&h=600&fit=cover`, category: "All" },
+  { id: 2, src: `${baseUrl}/Images/2.jpg&w=800&h=600&fit=cover`, category: "All" },
+  { id: 3, src: `${baseUrl}/Images/3.jpg&w=800&h=600&fit=cover`, category: "All" },
+  { id: 4, src: `${baseUrl}/Images/4.jpg&w=800&h=600&fit=cover`, category: "All" },
+  { id: 5, src: `${baseUrl}/Images/5.jpg&w=800&h=600&fit=cover`, category: "Sports" },
+  { id: 6, src: `${baseUrl}/Images/6.jpg&w=800&h=600&fit=cover`, category: "Sports" },
+  { id: 7, src: `${baseUrl}/Images/7.jpg&w=800&h=600&fit=cover`, category: "Sports" },
+  { id: 8, src: `${baseUrl}/Images/8.jpg&w=800&h=600&fit=cover`, category: "Sports" },
+  { id: 9, src: `${baseUrl}/Images/9.jpg&w=800&h=600&fit=cover`, category: "Department" },
+  { id: 10, src: `${baseUrl}/Images/10.jpg&w=800&h=600&fit=cover`, category: "Department" },
+  { id: 11, src: `${baseUrl}/Images/11.jpg&w=800&h=600&fit=cover`, category: "Department" },
+  { id: 12, src: `${baseUrl}/Images/12.jpg&w=800&h=600&fit=cover`, category: "Department" },
+  { id: 13, src: `${baseUrl}/Images/13.jpg&w=800&h=600&fit=cover`, category: "Department" },
+  { id: 14, src: `${baseUrl}/Images/14.jpg&w=800&h=600&fit=cover`, category: "Cultural Events" },
+  { id: 15, src: `${baseUrl}/Images/15.jpg&w=800&h=600&fit=cover`, category: "Cultural Events" },
+  { id: 16, src: `${baseUrl}/Images/16.jpg&w=800&h=600&fit=cover`, category: "Cultural Events" },
+  { id: 17, src: `${baseUrl}/Images/17.jpg&w=800&h=600&fit=cover`, category: "Cultural Events" },
+  { id: 18, src: `${baseUrl}/Images/18.jpg&w=800&h=600&fit=cover`, category: "Cultural Events" },
+  { id: 19, src: `${baseUrl}/Images/19.jpg&w=800&h=600&fit=cover`, category: "Cultural Events" },
 ];
 
 const categories = ["All", "Department", "Sports", "Cultural Events"];
