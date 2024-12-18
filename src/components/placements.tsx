@@ -4,52 +4,48 @@ import Image from 'next/image';
 const companies = [
   {
     name: "IBM",
-    logo: "/placements/ibm-logo-18910.png"  
+    logo: "/placements/ibm-logo-18910.png",
   },
   {
     name: "Torrent Power",
-    logo: "/placements/TORNTPOWER.NS_BIG.png"
+    logo: "/placements/TORNTPOWER.NS_BIG.png",
   },
   {
     name: "Accenture",
-    logo: "/placements/accenture.png"
-  },
-  {
-    name: "L&T",
-    logo: "/placements/L&T.png"
+    logo: "/placements/accenture.png",
   },
   {
     name: "Mahindra EPC",
-    logo: "/placements/mahindra-epc.png"
+    logo: "/placements/mahindra-epc.png",
   },
   {
     name: "GSFC",
-    logo: "/placements/gsfc.png"
+    logo: "/placements/gsfc.png",
   },
   {
     name: "Cybage",
-    logo: "/placements/cybage.png"
+    logo: "/placements/cybage.png",
   },
   {
     name: "Searce",
-    logo: "/placements/searce.png"
+    logo: "/placements/searce.png",
   },
   {
     name: "Thomson Reuters",
-    logo: "/placements/thomson-reuters.png"
+    logo: "/placements/thomson-reuters.png",
   },
   {
     name: "Surekha Technologies",
-    logo: "/placements/surekha-technologies.png"
+    logo: "/placements/surekha-technologies.png",
   },
   {
     name: "IP Calculus",
-    logo: "/placements/ip-calculus.png"
+    logo: "/placements/ip-calculus.png",
   },
   {
     name: "TATA Consultancy",
-    logo: "/placements/tata_consultanct_services.png"
-  }
+    logo: "/placements/tata_consultanct_services.png",
+  },
 ];
 
 const Placements = () => {
@@ -72,11 +68,11 @@ const Placements = () => {
               <div key={`${company.name}-1-${index}`} className="flex-none">
                 <div className="h-32 w-48 relative">
                   <Image
-                    src={company.logo}
-                    alt={company.name}
-                    className="object-contain"
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  src={`https://wsrv.nl/?url=https://ldce-web-nine.vercel.app${company.logo}&w=192&h=128&fit=contain&auto=format`}
+                  alt={company.name}
+                  className="object-contain"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
               </div>
@@ -86,7 +82,7 @@ const Placements = () => {
               <div key={`${company.name}-2-${index}`} className="flex-none">
                 <div className="h-32 w-48 relative">
                   <Image
-                    src={company.logo}
+                    src={`https://wsrv.nl/?url=https://ldce-web-nine.vercel.app${company.logo}`}
                     alt={company.name}
                     className="object-contain"
                     fill
