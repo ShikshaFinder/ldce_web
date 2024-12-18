@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 const companies = [
   {
@@ -67,11 +66,10 @@ const Placements = () => {
             {companies.map((company, index) => (
               <div key={`${company.name}-1-${index}`} className="flex-none">
                 <div className="h-32 w-48 relative">
-                  <Image
+                  <img
                   src={`https://wsrv.nl/?url=https://ldce-web-nine.vercel.app${company.logo}&w=192&h=128&fit=contain&auto=format`}
                   alt={company.name}
                   className="object-contain"
-                  fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
@@ -81,11 +79,10 @@ const Placements = () => {
             {companies.map((company, index) => (
               <div key={`${company.name}-2-${index}`} className="flex-none">
                 <div className="h-32 w-48 relative">
-                  <Image
+                  <img
                     src={`https://wsrv.nl/?url=https://ldce-web-nine.vercel.app${company.logo}`}
                     alt={company.name}
                     className="object-contain"
-                    fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
